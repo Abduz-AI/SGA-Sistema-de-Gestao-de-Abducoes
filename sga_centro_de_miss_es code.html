@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131d;color:#dfe2f1;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#262a35","tertiary-fixed-dim":"#ffb0cd","on-error-container":"#ffdad6","surface-container-lowest":"#0a0e18","on-primary-container":"#00424f","on-surface":"#dfe2f1","tertiary-fixed":"#ffd9e4","on-surface-variant":"#bcc9cd","on-primary":"#003640","surface":"#0f131d","on-tertiary-fixed-variant":"#8c0053","inverse-on-surface":"#2c303b","on-error":"#690005","on-secondary":"#003824","on-tertiary-fixed":"#3e0022","primary":"#4cd7f6","primary-fixed":"#acedff","primary-container":"#06b6d4","on-tertiary":"#640039","surface-container-highest":"#313540","surface-container-low":"#171b26","surface-bright":"#353944","surface-dim":"#0f131d","secondary":"#4edea3","on-secondary-container":"#00311f","secondary-container":"#00a572","on-primary-fixed":"#001f26","surface-tint":"#4cd7f6","on-secondary-fixed":"#002113","outline":"#869397","background":"#0f131d","on-tertiary-container":"#780047","tertiary-container":"#ff79b4","inverse-primary":"#00687a","on-background":"#dfe2f1","tertiary":"#ffb0cd","primary-fixed-dim":"#4cd7f6","secondary-fixed":"#6ffbbe","on-primary-fixed-variant":"#004e5c","outline-variant":"#3d494c","surface-variant":"#313540","on-secondary-fixed-variant":"#005236","error":"#ffb4ab","secondary-fixed-dim":"#4edea3","inverse-surface":"#dfe2f1","error-container":"#93000a","surface-container":"#1c1f2a"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1rem","margin":"2rem","gutter-mobile":"0.75rem","space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},fontFamily:{"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"body-sm":["Geist"],"body-md":["Geist"],"label-sm":["JetBrains Mono"],"headline-xl":["Space Grotesk"],"headline-sm":["Space Grotesk"],"label-lg":["JetBrains Mono"],"body-lg":["Geist"],"headline-xl-mobile":["Space Grotesk"],"label-md":["JetBrains Mono"]},fontSize:{"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SGA Abduz-AI Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrArfqKx7b2gj4jtPgm86cla9GxSzxrZD8KCz__d9MOdUX7051n7WpKPFMRiY6Ao2VrFTOL-vK_T87P_GLEnyLUgPhEti0u9DfgphqgO3aYgbBtJ5PgXvczDIO62ff2MDAvWGWRszyY_UZ6V8GOu_3K8XRO0aIDeDiVhZHp2mvECurqJmyQvW6sw06tilYHWqbkzGZ0xrNV2L5g4Z9vINfsbx67d-otE8tRUVWbPvD54Dw"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary truncate tracking-tight">SGA Abduz-AI</span></div><div class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">ORBITAL-SYNC: ONLINE</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notificações Operacionais" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="px-gutter-mobile pb-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">COMANDO // Missões</span><span class="font-label-sm text-label-sm text-primary">T-00:41:19</span></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-mobile space-y-space-md pb-6">
+<!-- Tactical Ticker / System Status Notice (FR-058 / US-012) -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-sm shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="material-symbols-outlined text-[16px] text-primary flex-shrink-0">stream</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">TELEMETRIA ORBITAL ATIVA // COBERTURA AMÉRICA DO SUL ESTÁVEL</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex-shrink-0 bg-surface-container-high px-1.5 py-0.5 rounded">99.8% BIO-SYNC</span>
+</div>
+<!-- Operational Metrics 4-Grid HUD -->
+<section class="grid grid-cols-2 gap-space-xs">
+<!-- Ativas -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ativas</span>
+<span class="material-symbols-outlined text-primary text-[18px]">satellite_alt</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary">03</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-tighter">EM CURSO</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-primary rounded-full w-3/4"></div>
+</div>
+</div>
+<!-- Pendentes -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pendentes</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">hourglass_top</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">02</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-tighter">AUTO-DISPATCH</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded-full w-1/2"></div>
+</div>
+</div>
+<!-- Concluídas -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Concluídas</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">task_alt</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">28</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CICLO ATUAL</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full"></div>
+</div>
+</div>
+<!-- Hangar Frota -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">No Hangar</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">flight_takeoff</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">04</span>
+<span class="font-label-sm text-label-sm text-primary tracking-tighter">PRONTAS (BR-016)</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-primary-fixed rounded-full w-4/6"></div>
+</div>
+</div>
+</section>
+<!-- Status Badges Filter Bar (BR-012) -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 -mx-gutter-mobile px-gutter-mobile no-scrollbar" id="statusFilterBar">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex-shrink-0 transition-all shadow-sm" onclick="filterMissions('todas', this)">
+<span>Todas</span>
+<span class="bg-surface-container-lowest text-primary px-1.5 py-0.2 rounded-full font-label-sm text-[9px]">33</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md flex-shrink-0 transition-all" onclick="filterMissions('andamento', this)">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Em andamento</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md flex-shrink-0 transition-all" onclick="filterMissions('pendente', this)">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Pendente</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md flex-shrink-0 transition-all" onclick="filterMissions('adiada', this)">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Adiada</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md flex-shrink-0 transition-all" onclick="filterMissions('concluida', this)">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Concluída</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md flex-shrink-0 transition-all" onclick="filterMissions('cancelada', this)">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Cancelada</span>
+</button>
+</div>
+<!-- Operational Highlight: Active Abduction Mission (US-006, US-008, US-009) -->
+<section class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] animate-spin" style="animation-duration: 6s;">track_changes</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Operação em Andamento</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> RAY-CAST 98.4%
+      </span>
+</div>
+<!-- Active Card Matrix -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col space-y-space-md relative overflow-hidden">
+<!-- Glow ambient background highlight -->
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Header: ID + State Badge -->
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary font-bold">#ABD-8042</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">SUB-SEC 04-B</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface mt-0.5">Carlos Mendonça</p>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-outline">location_on</span>
+<span>34 anos • São Paulo - SP (23.5505° S, 46.6333° W)</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-2.5 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Em andamento</span>
+</div>
+</div>
+<!-- Tactical Visual: Extraction Telemetry & Specimen Snapshot -->
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="col-span-1 rounded overflow-hidden relative h-20 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Futuristic sci-fi thermal biometric scan of human target Carlos Mendonça with cyan and magenta wireframe contour nodes inside an alien vessel scanner HUD display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjzD8sZWlYnQvIZRM7iW4c6vi0mYdPLAlczenQ2qWnTkykVtltadX928PNo4dDCtwSFoQsRrdgfQcQNIs4HA15Qx9Gben9vUaEHpxwymJkgQlIY7iA6-YJyGbvo6Ki6rLdgZb1gD8xxeRooh6-X3sRSWRLOwtMRrKiVZs28oN9DbSLHlXSXkMExj9I9Y4fiaoWY-wvw1MWtZsc0fpRnZd58J6r9TBeQslpG75vsG-v"/>
+<div class="absolute bottom-1 left-1 bg-surface-container-lowest/80 px-1 rounded font-label-sm text-[9px] text-secondary">
+            ESTÁVEL
+          </div>
+</div>
+<div class="col-span-2 flex flex-col justify-around py-0.5">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline"><span class="material-symbols-outlined text-[14px]">rocket</span> NAVE</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Vortex-9</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline"><span class="material-symbols-outlined text-[14px]">swap_horiz</span> ROTA (BR-016)</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Alien Hangar ⇄ Base</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline"><span class="material-symbols-outlined text-[14px]">group</span> CAPACIDADE (BR-005)</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-1.5 py-0.2 rounded font-bold">4/4 MAX (LOTADA)</span>
+</div>
+</div>
+</div>
+<!-- Crew Allocations (BR-006: Minimo 1 Piloto + 1 Abduzidor) -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Tripulação Convocada (BR-006)</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span> CONFORME
+          </span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm font-bold">
+              PX
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Cmd. Xylar</span>
+<span class="font-label-sm text-[9px] text-primary truncate">PILOTO HABILITADO</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded">
+<div class="w-6 h-6 rounded bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-label-sm text-label-sm font-bold">
+              SK
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Sub. Kaelen</span>
+<span class="font-label-sm text-[9px] text-tertiary-fixed-dim truncate">ABDUZIDOR N-1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tactical Quick Action Controls (US-009, US-019) -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-11 bg-primary text-on-primary hover:bg-primary-container rounded font-label-lg text-label-lg font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-colors active:scale-[0.99]" onclick="concludeMissionModal('ABD-8042')">
+<span class="material-symbols-outlined text-[20px]">system_update_alt</span>
+<span>Concluir Missão & Registrar Entrada</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-10 bg-surface-container-highest text-on-surface hover:text-primary rounded font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" onclick="openOccurrenceModal('ABD-8042')">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">warning</span>
+<span>Registrar Ocorrência</span>
+</button>
+<button class="h-10 bg-surface-container-highest text-on-surface hover:text-secondary rounded font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" onclick="inspectTelemetry('ABD-8042')">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>Telemetria HUD</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Scheduled & Pending List (US-007, US-010, US-011, BR-007, BR-008, BR-014) -->
+<section class="flex flex-col space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">schedule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Escala Operacional</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 MISSÕES EM FILA</span>
+</div>
+<!-- Mission ABD-8043 (Pendente, Auto-dispatch anti-conflito OK) -->
+<div class="bg-surface-container rounded-lg p-space-md shadow-md flex flex-col space-y-space-sm" id="card-ABD-8043">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary font-bold">#ABD-8043</span>
+<span class="bg-surface-container-high text-outline font-label-sm text-[9px] px-1.5 py-0.5 rounded">T-01:04:12</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Dra. Elena Vance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pesquisa Bioquímica • Rio de Janeiro - RJ</p>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium uppercase">Pendente</span>
+</div>
+</div>
+<!-- Anti-Conflict Checklist validation (BR-007, BR-008) -->
+<div class="bg-surface-container-lowest/80 rounded p-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface">Auto-Dispatch: Anti-Conflito Validado</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">23:45 UTC-3</span>
+</div>
+<!-- Action Buttons: Defer or Cancel with Reason -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="h-10 bg-surface-container-high text-tertiary-fixed-dim hover:bg-surface-bright rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-colors" onclick="deferMissionModal('ABD-8043')">
+<span class="material-symbols-outlined text-[16px]">update</span>
+<span>Adiar Missão</span>
+</button>
+<button class="h-10 bg-error-container/40 text-error hover:bg-error-container/70 rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-colors" onclick="cancelMissionModal('ABD-8043')">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span>Cancelar</span>
+</button>
+</div>
+</div>
+<!-- Mission ABD-8041 (Adiada - BR-014: Aguarda nova data sem 'Reagendada') -->
+<div class="bg-surface-container rounded-lg p-space-md shadow-md flex flex-col space-y-space-sm" id="card-ABD-8041">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary font-bold">#ABD-8041</span>
+<span class="bg-surface-container-high text-tertiary font-label-sm text-[9px] px-1.5 py-0.5 rounded">AGUARDA GESTÃO</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Lucas Alencar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Campinas - SP • Motivo: Tempestade Geomagnética</p>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium uppercase">Adiada</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">notification_important</span> Requer Reagendamento (BR-014)
+        </span>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline" onclick="reassignDate('ABD-8041')">DEFINIR DATA</button>
+</div>
+</div>
+</section>
+<!-- Live Operation Activity Feed / Alert Logs (US-012) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">notifications_active</span> LOGS EM TEMPO REAL
+      </span>
+<span class="font-label-sm text-label-sm text-primary">AUDITORIA ON</span>
+</div>
+<div class="space-y-2">
+<div class="flex items-start gap-2 bg-surface-container-low p-2 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface truncate">Nave Vortex-9 ativou cloaking óptico sobre coordenadas SP-Central.</span>
+<span class="font-label-sm text-label-sm text-outline">Há 4 min • Auto-registro</span>
+</div>
+</div>
+<div class="flex items-start gap-2 bg-surface-container-low p-2 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface truncate">Verificação anti-conflito (BR-007) validou piloto Xylar para voo ABD-8042.</span>
+<span class="font-label-sm text-label-sm text-outline">Há 19 min • Sistema SGA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Action Button (FAB) for Nova Missão (BR-009, US-026) -->
+<div class="fixed bottom-20 right-4 z-40">
+<button class="h-14 px-5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-2 shadow-[0_4px_20px_rgba(6,182,212,0.4)] hover:bg-primary-container active:scale-95 transition-all" onclick="openNewMissionModal()">
+<span class="material-symbols-outlined text-[24px]">add</span>
+<span>NOVA MISSÃO</span>
+</button>
+</div>
+<!-- MODAL: NOVA MISSÃO (US-006, BR-005, BR-006, BR-007, BR-008, BR-009) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/85 backdrop-blur-md hidden flex items-end sm:items-center justify-center p-0 sm:p-4" id="newMissionModal">
+<div class="w-full max-w-lg bg-surface-container-low rounded-t-xl sm:rounded-xl p-space-md flex flex-col space-y-space-md max-h-[795px] overflow-y-auto shadow-2xl">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">add_task</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Compor Missão de Abdução</h3>
+<span class="font-label-sm text-label-sm text-primary uppercase">Protocolo US-006 // BR-009</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" onclick="closeNewMissionModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Human Specimen Target with Pre-Research Check (BR-009) -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">1. Alvo Humano (Requer Pesquisa Prévia - BR-009)</label>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Validado
+          </span>
+</div>
+<select class="w-full h-11 bg-surface-container rounded px-3 text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary">
+<option selected="">Dra. Elena Vance (Pesquisa #PSQ-901 - Aprovada pelo Conselho)</option>
+<option>Mariana Duarte (Pesquisa #PSQ-882 - Biometria Concluída)</option>
+<option>Dr. Arthur Pendelton (Pesquisa #PSQ-870 - Células Raras)</option>
+</select>
+<span class="font-label-sm text-label-sm text-outline">Humanos sem pesquisa prévia são bloqueados automaticamente (BR-009).</span>
+</div>
+<!-- Nave Selection with Auto-Capacity Counter (BR-005, BR-016) -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">2. Nave & Destino (Origem: Alien Hangar - BR-016)</label>
+<span class="font-label-sm text-label-sm text-primary">CAPACIDADE: 4 PESSOAS</span>
+</div>
+<select class="w-full h-11 bg-surface-container rounded px-3 text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary">
+<option selected="">Chronos-III (Hangar Estacionamento • Vagas: 4 restantes)</option>
+<option>Nebula-X (Hangar Estacionamento • Vagas: 2 restantes)</option>
+<option>Spectre-2 (Hangar Estacionamento • Vagas: 4 restantes)</option>
+</select>
+</div>
+<!-- Crew Assignment (BR-006: Mínimo 1 Piloto + 1 Abduzidor) -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">3. Tripulação (Mínimo 1 Piloto + 1 Abduzidor - BR-006)</label>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<span class="font-label-sm text-[10px] text-primary">PILOTO HABILITADO</span>
+<select class="w-full h-10 bg-surface-container rounded px-2 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary mt-1">
+<option selected="">Cmd. Zarek (Livre)</option>
+<option>Cmd. Vael (Livre)</option>
+</select>
+</div>
+<div>
+<span class="font-label-sm text-[10px] text-tertiary-fixed-dim">ABDUZIDOR N1/N2</span>
+<select class="w-full h-10 bg-surface-container rounded px-2 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary mt-1">
+<option selected="">Operativo Vorx (Livre)</option>
+<option>Operativo Selene (Livre)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Schedule & Conflict Checker (BR-007, BR-008) -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">4. Janela de Execução & Horário</label>
+<div class="grid grid-cols-2 gap-2">
+<input class="h-10 bg-surface-container rounded px-3 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" type="date" value="2025-05-18"/>
+<input class="h-10 bg-surface-container rounded px-3 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" type="time" value="02:30"/>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-highest/60 p-2 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-secondary">Verificação Anti-Conflito: Sem sobreposições para nave e pilotos.</span>
+</div>
+</div>
+<!-- Submit Dispatch -->
+<div class="flex gap-2 pt-2">
+<button class="flex-1 h-12 bg-surface-container-high text-on-surface font-label-md text-label-md uppercase rounded hover:bg-surface-bright" onclick="closeNewMissionModal()">
+          Descartar
+        </button>
+<button class="flex-1 h-12 bg-primary text-on-primary font-label-md text-label-md font-bold uppercase rounded shadow-lg hover:bg-primary-container" onclick="submitMission()">
+          Agendar Missão
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: CANCELAMENTO DEFINITIVO (US-011 - Motivo Obrigatório) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/85 backdrop-blur-md hidden flex items-end sm:items-center justify-center p-0 sm:p-4" id="cancelModal">
+<div class="w-full max-w-md bg-surface-container-low rounded-t-xl sm:rounded-xl p-space-md flex flex-col space-y-space-sm shadow-2xl">
+<div class="flex items-center gap-2 text-error">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cancelar Missão #ABD-8043</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        O cancelamento de uma missão pendente é definitivo. Conforme a regra US-011, é obrigatório registrar a justificativa operacional para auditoria.
+      </p>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Motivo Operacional Obrigatório</label>
+<textarea class="w-full bg-surface-container rounded p-2 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-error" id="cancelReasonInput" placeholder="Ex.: Risco de detecção militar elevada / Alvo realocado pelo governo terráqueo..." rows="3"></textarea>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 h-10 bg-surface-container-high text-on-surface font-label-md text-label-md rounded" onclick="closeCancelModal()">Voltar</button>
+<button class="flex-1 h-10 bg-error text-on-error font-label-md text-label-md font-bold uppercase rounded" onclick="confirmCancelMission()">Confirmar Cancelamento</button>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions Client-side Controller -->
+<script>
+    function filterMissions(type, btn) {
+      const container = document.getElementById('statusFilterBar');
+      container.querySelectorAll('button').forEach(b => {
+        b.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md flex-shrink-0 transition-all';
+      });
+      btn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex-shrink-0 transition-all shadow-sm';
+    }
+
+    function openNewMissionModal() {
+      document.getElementById('newMissionModal').classList.remove('hidden');
+    }
+
+    function closeNewMissionModal() {
+      document.getElementById('newMissionModal').classList.add('hidden');
+    }
+
+    function submitMission() {
+      closeNewMissionModal();
+      alert('Missão agendada com sucesso! Verificação anti-conflito e pesquisa validadas.');
+    }
+
+    function concludeMissionModal(id) {
+      alert('Missão ' + id + ' concluída! Humano desembarcado e transferido para Ala de Pesquisa (US-009 / BR-016).');
+    }
+
+    function openOccurrenceModal(id) {
+      alert('Abrindo console de registro de ocorrências para ' + id + ' (US-019).');
+    }
+
+    function inspectTelemetry(id) {
+      alert('Acessando telemetria quântica ao vivo da nave Vortex-9 (#ABD-8042).');
+    }
+
+    function deferMissionModal(id) {
+      alert('Missão ' + id + ' marcada como Adiada (BR-014). Aguardando nova data pelo Gestor.');
+      const card = document.getElementById('card-' + id);
+      if (card) {
+        card.querySelector('.uppercase').innerText = 'Adiada';
+      }
+    }
+
+    function cancelMissionModal(id) {
+      document.getElementById('cancelModal').classList.remove('hidden');
+    }
+
+    function closeCancelModal() {
+      document.getElementById('cancelModal').classList.add('hidden');
+    }
+
+    function confirmCancelMission() {
+      const reason = document.getElementById('cancelReasonInput').value.trim();
+      if (!reason) {
+        alert('É obrigatório informar o motivo do cancelamento (US-011).');
+        return;
+      }
+      closeCancelModal();
+      const card = document.getElementById('card-ABD-8043');
+      if (card) {
+        card.style.opacity = '0.5';
+        card.querySelector('.uppercase').innerText = 'Cancelada';
+      }
+      alert('Missão ABD-8043 cancelada com sucesso. Motivo auditado.');
+    }
+
+    function reassignDate(id) {
+      alert('Selecione uma nova janela temporal para ' + id + ' respeitando o anti-conflito (BR-007).');
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.6)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="missoes" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Missões</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="humanos" href="#"><span class="material-symbols-outlined text-[22px]">fingerprint</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Humanos</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="frota" href="#"><span class="material-symbols-outlined text-[22px]">rocket_launch</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Frota</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cientifico" href="#"><span class="material-symbols-outlined text-[22px]">biotech</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Científico</span></a></div></nav></body></html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131d;color:#dfe2f1;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#262a35","tertiary-fixed-dim":"#ffb0cd","on-error-container":"#ffdad6","surface-container-lowest":"#0a0e18","on-primary-container":"#00424f","on-surface":"#dfe2f1","tertiary-fixed":"#ffd9e4","on-surface-variant":"#bcc9cd","on-primary":"#003640","surface":"#0f131d","on-tertiary-fixed-variant":"#8c0053","inverse-on-surface":"#2c303b","on-error":"#690005","on-secondary":"#003824","on-tertiary-fixed":"#3e0022","primary":"#4cd7f6","primary-fixed":"#acedff","primary-container":"#06b6d4","on-tertiary":"#640039","surface-container-highest":"#313540","surface-container-low":"#171b26","surface-bright":"#353944","surface-dim":"#0f131d","secondary":"#4edea3","on-secondary-container":"#00311f","secondary-container":"#00a572","on-primary-fixed":"#001f26","surface-tint":"#4cd7f6","on-secondary-fixed":"#002113","outline":"#869397","background":"#0f131d","on-tertiary-container":"#780047","tertiary-container":"#ff79b4","inverse-primary":"#00687a","on-background":"#dfe2f1","tertiary":"#ffb0cd","primary-fixed-dim":"#4cd7f6","secondary-fixed":"#6ffbbe","on-primary-fixed-variant":"#004e5c","outline-variant":"#3d494c","surface-variant":"#313540","on-secondary-fixed-variant":"#005236","error":"#ffb4ab","secondary-fixed-dim":"#4edea3","inverse-surface":"#dfe2f1","error-container":"#93000a","surface-container":"#1c1f2a"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1rem","margin":"2rem","gutter-mobile":"0.75rem","space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},fontFamily:{"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"body-sm":["Geist"],"body-md":["Geist"],"label-sm":["JetBrains Mono"],"headline-xl":["Space Grotesk"],"headline-sm":["Space Grotesk"],"label-lg":["JetBrains Mono"],"body-lg":["Geist"],"headline-xl-mobile":["Space Grotesk"],"label-md":["JetBrains Mono"]},fontSize:{"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SGA Abduz-AI Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrArfqKx7b2gj4jtPgm86cla9GxSzxrZD8KCz__d9MOdUX7051n7WpKPFMRiY6Ao2VrFTOL-vK_T87P_GLEnyLUgPhEti0u9DfgphqgO3aYgbBtJ5PgXvczDIO62ff2MDAvWGWRszyY_UZ6V8GOu_3K8XRO0aIDeDiVhZHp2mvECurqJmyQvW6sw06tilYHWqbkzGZ0xrNV2L5g4Z9vINfsbx67d-otE8tRUVWbPvD54Dw"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary truncate tracking-tight">SGA Abduz-AI</span></div><div class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">ORBITAL-SYNC: ONLINE</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notificações Operacionais" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="px-gutter-mobile pb-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">COMANDO // Humanos</span><span class="font-label-sm text-label-sm text-primary">T-00:41:19</span></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-mobile py-space-sm gap-space-md">
+<!-- HUD STATUS STRIP / OPERATIONAL BANNER -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-sm shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">SISTEMA PROTOCOLO</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary/10 text-primary uppercase font-bold">BR-009/010</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Triagem de Relevância e Discrição Planetária</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-1 rounded flex-shrink-0">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">HUM-INTEL</span>
+</div>
+</div>
+<!-- TACTICAL SEARCH & DISPATCH BAR (FR-029 Trigger) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="flex-1 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md placeholder:text-on-surface-variant outline-none focus:bg-surface-container-highest transition-colors" id="target-search-input" placeholder="Pesquisar por codinome, setor ou CID..." type="text"/>
+</div>
+<button class="h-11 px-space-md rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold flex items-center gap-1.5 shadow-md active:scale-95 transition-all flex-shrink-0" id="btn-open-register">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Cadastrar</span>
+</button>
+</div>
+<!-- FILTER CHIPS -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 no-scrollbar">
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider flex-shrink-0 flex items-center gap-1">
+<span>Todos (18)</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex-shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Pendente Avaliação (1)</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex-shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Autorizados (12)</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex-shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Bloqueados (5)</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Popularidade < 20</span>
+</button>
+</div>
+</div>
+<!-- POPUP/MODAL: CADASTRO DE HUMANO (FR-029) - INLINE COLLAPSIBLE ACCORDION/PANEL -->
+<div class="hidden overflow-hidden rounded-xl bg-surface-container p-space-md shadow-xl flex flex-col gap-space-sm" id="modal-register-human">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Cadastro de Novo Espécime (FR-029)</span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="btn-close-register">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Insira as coordenadas biométricas e demográficas iniciais para despacho da equipe de pesquisa pré-missão.
+    </p>
+<div class="grid grid-cols-1 gap-space-xs mt-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nome Completo</label>
+<input class="h-10 px-3 rounded bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline outline-none focus:bg-surface-container-high" placeholder="Ex: Lucas Dorneles" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Localização / Região</label>
+<input class="h-10 px-3 rounded bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline outline-none" placeholder="Ex: Goiás, Brasil" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Idade Estimada</label>
+<input class="h-10 px-3 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md placeholder:text-outline outline-none" placeholder="Ex: 34" type="number"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Índice Estimado de Popularidade</label>
+<span class="font-label-sm text-label-sm text-primary" id="popularity-indicator">15/100 (Discreto)</span>
+</div>
+<input class="accent-primary w-full h-2 bg-surface-container-lowest rounded cursor-pointer" max="100" min="0" oninput="document.getElementById('popularity-indicator').innerText = this.value + '/100 ' + (this.value > 50 ? '(Alerta Notoriedade)' : '(Discreto)')" type="range" value="15"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-xs pt-space-xs">
+<button class="px-space-md h-10 rounded bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider" id="btn-cancel-register">Cancelar</button>
+<button class="px-space-md h-10 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold flex items-center gap-1" id="btn-save-human">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Submeter ao Dossier</span>
+</button>
+</div>
+</div>
+<!-- SECTION: AVALIAÇÃO PRÉ-MISSÃO PENDENTE (BR-009 / BR-010 / US-002 / US-003) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Avaliação Pré-Missão Pendente</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary/10 text-tertiary uppercase font-mono font-semibold">BR-009 // URGENTE</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+      Decisão mandatória de Gestor/Supervisor. Confirmação do vetor de extração sem alarme social.
+    </span>
+<!-- PENDING DOSSIER CARD (ARTHUR PENDELTON) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-lg flex flex-col mt-1">
+<!-- Card Reticle / Header Area -->
+<div class="p-space-md bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dark dramatic tactical portrait shot of Arthur Pendelton, a 42 year old weathered male agronomist, looking thoughtful under low cyan ambient lighting with biometric reticle scanner overlays on face." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5_O5aGAhN75JHuWHqo4q5dv8JBOFXJM9712pfTrAgi3bCNaLeBgBv7VRzXDvw1mKM1VOT-C3Lba7HcbVN8XAPfel0pKZlhI0NMmug9KQDkWR4Q-ERKo7105yp83ltQI84wp5I2s-N5obda9rWstZcSu2rmJI_Q8ro-7DPsnFEF7ju1GKNo_T9hUG87pjK37s1XfL6cEQXXEGxZsU4_QAPhzAMOD7wFELzd3Y1gm2Y"/>
+<div class="absolute bottom-0 right-0 px-1 rounded-tl bg-surface-container-lowest text-primary font-label-sm text-label-sm">42y</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-primary uppercase font-mono tracking-wider">#HUM-1091</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary font-label-sm text-label-sm font-bold uppercase">Sob Avaliação</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface truncate">Arthur Pendelton</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">distance</span>
+<span class="font-body-sm text-body-sm truncate">Área Rural de Cristalina - GO</span>
+</div>
+</div>
+</div>
+<!-- POPULARITY RADAR MINI BADGE -->
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Popularidade</span>
+<div class="flex items-baseline gap-0.5">
+<span class="font-headline-md text-headline-md text-secondary font-mono font-bold">12</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/100</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-tighter">Índice Mínimo</span>
+</div>
+</div>
+</div>
+<!-- DOSSIER TELEMETRY & SURVEY METRICS (FR-032 / US-002) -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<!-- Field Investigation Findings Matrix -->
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Metric 1: Wealth -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">account_balance_wallet</span>
+              Patrimônio / Renda
+            </span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Classe Média Baixa</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem escolta ou vigilância</span>
+</div>
+<!-- Metric 2: Job -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">agriculture</span>
+              Emprego / Fonte
+            </span>
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Agrônomo Local</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Horários agroflorestais</span>
+</div>
+<!-- Metric 3: Social Interactions -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-0.5 col-span-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">hub</span>
+              Comportamento Social & Conectividade
+            </span>
+<span class="font-body-md text-body-md text-on-surface font-medium">
+              Espécime solitário. Rotina noturna de inspeção agrária sem acompanhantes ou rastreamento ativo de rede.
+            </span>
+</div>
+</div>
+<!-- LOCAIS PESQUISADOS & SENSOR DE CALMARIA (FR-033 / FR-035) -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">explore</span>
+              Locais Pesquisados (FR-033)
+            </span>
+<!-- Clear highlight that calm evaluation is Human by Supervisor/Gestor (FR-035) -->
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary/10 text-secondary uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified_user</span>
+              Local Calmo (Auditoria Humana FR-035)
+            </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-16 h-12 rounded bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Tactical night infrared aerial photo of a remote dirt gravel country road KM 14 in Cristalina Goias, dark dense foliage, no passing vehicles or electrical lights, deep dark mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFU-js137QacQVpU_zro8ap7vSzpz4NDr_-huVLPtezbmuZJQAODgkWMB75GEErUpa28Ahl98ebqWPHe_Icpnz4eXeemhx6xqF1Pe3pUwgBcAnxlEByd6Y2IKItU3kOq9OHmLMGk8em6-WSugUJ0eq1kHKm3UboWthZ-IBZZORs49qxycH1Y7oP4wgxmwLgL2rqPhC0ZUcnaXCr8cS9xHh0X6ltJjYKemCWMl2K9ed"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Estrada vicinal KM 14</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Coordenadas: 16°46'02.1"S 47°37'11.8"W</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Fluxo de tráfego: ~0.2 veículos/hora às 02h</span>
+</div>
+</div>
+</div>
+<!-- RELEVÂNCIA GLOBAL BANNER (FR-036 / BR-011) -->
+<div class="p-space-sm rounded-lg bg-secondary/10 flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">shield_moon</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Status de Relevância Global (FR-036)</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Nenhuma relevância global detectada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Classificação: Apto para Abdução sem violação do protocolo BR-011. Ruído midiático previsto: 0.04%.</span>
+</div>
+</div>
+<!-- DECISION ACTION BUTTONS (US-003: AC-008 & AC-009) -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-mono tracking-widest text-center">
+            Comando de Autorização Gestor/Supervisor
+          </span>
+<div class="grid grid-cols-1 gap-space-xs">
+<button class="w-full h-12 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-all" id="btn-authorize-arthur">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Autorizar Prosseguimento (AC-009)</span>
+</button>
+<button class="w-full h-10 rounded-lg bg-surface-container-high hover:bg-error-container text-error font-label-md text-label-md uppercase tracking-wider font-semibold flex items-center justify-center gap-2 active:scale-95 transition-all" id="btn-cancel-arthur">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Cancelar por Relevância Global (AC-008)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION: LISTA DE HUMANOS CADASTRADOS (US-001) -->
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">group</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Base de Espécimes Cadastrados</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REGISTROS: 3 ATIVOS</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- ITEM 1: SOFIA VALENÇA (HUM-1092) -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Tactical candid photo of Sofia Valenca, a 28 year old female with dark wavy hair in Curitiba, wearing casual city jacket, cool moody cinematic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCav70BYCVSTFyqP9Q8QZKdwC91CFJMM8AbkrwQwm1_DJk4-Pf63f4O5BE4VIr5UHdB8VQ3FrnmmUnXV5CQbuPW0FoI46pcXXetp0jac6E8nx96_15lW2yTmUIp-kiQw0w-9LwiktV4ncPTvdHmL3ZfCJyaJREQH9BlOxOGT-J-iMUS-psHWufnJ6_6RKQjWwjy_fQtXjF8JvRTM3bJZLvKv-VxeWnfafiBC1zokorJ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">#HUM-1092</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm font-semibold uppercase">Autorizada</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sofia Valença, 28y</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Curitiba - PR • Arquiteta Autônoma</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Popularidade</span>
+<div class="flex items-baseline gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-mono font-bold">45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/100</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Média</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container-high/40 text-on-surface-variant">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+<span>Pesquisa: Concluída & Autorizada</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono text-primary">DISPATCH READY</span>
+</div>
+</div>
+<!-- ITEM 2: DR. ROBERTO ALENCAR (HUM-1093) - BLOQUEADO POR BR-011 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-xs relative overflow-hidden">
+<!-- Alert strip indicator -->
+<div class="absolute top-0 left-0 w-1.5 h-full bg-error"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover grayscale opacity-75" data-alt="Tactical file photo of Dr Roberto Alencar, 56 year old distinguished Brazilian male politician wearing an elegant charcoal suit in Brasilia, surrounded by press flashes, cool tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxLI5wTNVPlKeuTu5WLiERHz1FVRyO73d9O-d6EckIuBNJnJ10MKP7seQSgZXqPjfxdY7jEBsQ_5BQ_AhQJuSXAWTJp1W7-Plrl-Zkbmyjeain90XF7WaOJwj2jQZDhD-gXDzKShCWiTCcnSavEjLbcJ_gUwGcAxEvoE_rcYaZVf_djuqG1xcWiRzxUusJjCfP8sDL3XRhczT1YwtKfiqD_1AJEjyRI16DZvNjWCvO"/>
+<div class="absolute inset-0 bg-error/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-error text-[20px]">lock</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">#HUM-1093</span>
+<span class="px-1.5 py-0.2 rounded bg-error/20 text-error font-label-sm text-label-sm font-bold uppercase">Bloqueado BR-011</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Dr. Roberto Alencar, 56y</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Brasília - DF • Político / Deputado</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-sm text-label-sm text-error uppercase">Alta Visibilidade</span>
+<div class="flex items-baseline gap-0.5">
+<span class="font-headline-sm text-headline-sm text-error font-mono font-bold">89</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/100</span>
+</div>
+<span class="font-label-sm text-label-sm text-error">Crítico</span>
+</div>
+</div>
+<div class="pl-1 pt-1 flex items-center justify-between text-on-surface-variant">
+<span class="font-body-sm text-body-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+<span>Veto Definitivo: Relevância Global & Impacto Midiático Severo</span>
+</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest font-mono">ARQUIVADO</span>
+</div>
+</div>
+<!-- ITEM 3: MARCELO RIOS (HUM-1094) - EM COLETA -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Tactical outdoor profile shot of Marcelo Rios, 19 year old backpacker male outdoors in Chapada dos Veadeiros canyon, starry night background with slight green bioluminescent ambient glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlyoou_eZ92RzvW3uNBiA7IELmZG6nXXr7eQtUe28XlmGvIYGMv4NMgQPFwsDRdCDQmUxpUoVZuwO4R3K26ZkaxWLS1EqOsFM_qeyqVIJXpn1wlCL6c3BM_ox9bTycaJQfxvjXGzEXuHELY9YAlDB-335Masp3uTR2Xl_XpqFraSywaIjd2t87T0_g1C9gUzilNjioqAiD_Zy0TmrXb_NcK3RIEOEhUuQQTTcJMRmn"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">#HUM-1094</span>
+<span class="px-1.5 py-0.2 rounded bg-primary/20 text-primary font-label-sm text-label-sm font-semibold uppercase">Pesquisa Ativa</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Marcelo Rios, 19y</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Chapada dos Veadeiros • Mochileiro</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Popularidade</span>
+<div class="flex items-baseline gap-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary font-mono font-bold">08</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/100</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Baixa</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span>Em Coleta por Pesquisador N4 (Sondagem de Campo)</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono text-on-surface-variant">ETA: 4h</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TOAST FEEDBACK NOTIFICATION CONTAINER -->
+<div class="fixed bottom-20 left-4 right-4 z-50 pointer-events-none transform translate-y-8 opacity-0 transition-all duration-300 flex items-center justify-between p-3 rounded-lg bg-surface-container-highest text-on-surface shadow-xl" id="action-toast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-md text-body-md" id="toast-message">Operação registrada com sucesso.</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-mono text-primary">SGA-SYNC</span>
+</div>
+</div>
+<script>
+  // MICRO-INTERACTIONS & TACTICAL EVENT DISPATCHERS
+  const registerModal = document.getElementById('modal-register-human');
+  const btnOpenRegister = document.getElementById('btn-open-register');
+  const btnCloseRegister = document.getElementById('btn-close-register');
+  const btnCancelRegister = document.getElementById('btn-cancel-register');
+  const btnSaveHuman = document.getElementById('btn-save-human');
+  
+  const btnAuthArthur = document.getElementById('btn-authorize-arthur');
+  const btnCancelArthur = document.getElementById('btn-cancel-arthur');
+  const toast = document.getElementById('action-toast');
+  const toastMsg = document.getElementById('toast-message');
+  const toastIcon = document.getElementById('toast-icon');
+
+  function showToast(message, isError = false) {
+    toastMsg.innerText = message;
+    if (isError) {
+      toastIcon.innerText = 'block';
+      toastIcon.className = 'material-symbols-outlined text-error text-[20px]';
+    } else {
+      toastIcon.innerText = 'verified';
+      toastIcon.className = 'material-symbols-outlined text-secondary text-[20px]';
+    }
+    toast.classList.remove('translate-y-8', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-8', 'opacity-0');
+    }, 3200);
+  }
+
+  // Toggle Register Sheet
+  btnOpenRegister?.addEventListener('click', () => {
+    registerModal.classList.toggle('hidden');
+    if (!registerModal.classList.contains('hidden')) {
+      registerModal.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+
+  btnCloseRegister?.addEventListener('click', () => registerModal.classList.add('hidden'));
+  btnCancelRegister?.addEventListener('click', () => registerModal.classList.add('hidden'));
+
+  btnSaveHuman?.addEventListener('click', () => {
+    registerModal.classList.add('hidden');
+    showToast('Espécime registrado no dossier preliminar (FR-029).');
+  });
+
+  // Supervisor Action Triggers (AC-009 / AC-008)
+  btnAuthArthur?.addEventListener('click', () => {
+    btnAuthArthur.disabled = true;
+    btnAuthArthur.classList.add('opacity-50');
+    btnAuthArthur.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Transmitindo Vetor Orbital...</span>`;
+    
+    setTimeout(() => {
+      btnAuthArthur.innerHTML = `<span class="material-symbols-outlined text-[18px]">done_all</span><span>Autorização Concluída (AC-009)</span>`;
+      btnAuthArthur.classList.remove('bg-primary');
+      btnAuthArthur.classList.add('bg-secondary', 'text-on-secondary');
+      showToast('Arthur Pendelton aprovado para missão orbital.');
+    }, 900);
+  });
+
+  btnCancelArthur?.addEventListener('click', () => {
+    btnCancelArthur.disabled = true;
+    btnCancelArthur.innerHTML = `<span class="material-symbols-outlined text-[18px]">verified</span><span>Cancelado por Relevância Global (AC-008)</span>`;
+    showToast('Missão suspensa e alvo transferido para quarentena BR-011.', true);
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.6)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="missoes" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Missões</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 transition-colors text-primary font-semibold" data-path="humanos" href="#"><span class="material-symbols-outlined text-[22px]">fingerprint</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Humanos</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="frota" href="#"><span class="material-symbols-outlined text-[22px]">rocket_launch</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Frota</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cientifico" href="#"><span class="material-symbols-outlined text-[22px]">biotech</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Científico</span></a></div></nav></body></html>

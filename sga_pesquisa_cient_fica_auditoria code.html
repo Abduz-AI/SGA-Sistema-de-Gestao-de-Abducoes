@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131d;color:#dfe2f1;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#262a35","tertiary-fixed-dim":"#ffb0cd","on-error-container":"#ffdad6","surface-container-lowest":"#0a0e18","on-primary-container":"#00424f","on-surface":"#dfe2f1","tertiary-fixed":"#ffd9e4","on-surface-variant":"#bcc9cd","on-primary":"#003640","surface":"#0f131d","on-tertiary-fixed-variant":"#8c0053","inverse-on-surface":"#2c303b","on-error":"#690005","on-secondary":"#003824","on-tertiary-fixed":"#3e0022","primary":"#4cd7f6","primary-fixed":"#acedff","primary-container":"#06b6d4","on-tertiary":"#640039","surface-container-highest":"#313540","surface-container-low":"#171b26","surface-bright":"#353944","surface-dim":"#0f131d","secondary":"#4edea3","on-secondary-container":"#00311f","secondary-container":"#00a572","on-primary-fixed":"#001f26","surface-tint":"#4cd7f6","on-secondary-fixed":"#002113","outline":"#869397","background":"#0f131d","on-tertiary-container":"#780047","tertiary-container":"#ff79b4","inverse-primary":"#00687a","on-background":"#dfe2f1","tertiary":"#ffb0cd","primary-fixed-dim":"#4cd7f6","secondary-fixed":"#6ffbbe","on-primary-fixed-variant":"#004e5c","outline-variant":"#3d494c","surface-variant":"#313540","on-secondary-fixed-variant":"#005236","error":"#ffb4ab","secondary-fixed-dim":"#4edea3","inverse-surface":"#dfe2f1","error-container":"#93000a","surface-container":"#1c1f2a"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1rem","margin":"2rem","gutter-mobile":"0.75rem","space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},fontFamily:{"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"body-sm":["Geist"],"body-md":["Geist"],"label-sm":["JetBrains Mono"],"headline-xl":["Space Grotesk"],"headline-sm":["Space Grotesk"],"label-lg":["JetBrains Mono"],"body-lg":["Geist"],"headline-xl-mobile":["Space Grotesk"],"label-md":["JetBrains Mono"]},fontSize:{"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SGA Abduz-AI Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrArfqKx7b2gj4jtPgm86cla9GxSzxrZD8KCz__d9MOdUX7051n7WpKPFMRiY6Ao2VrFTOL-vK_T87P_GLEnyLUgPhEti0u9DfgphqgO3aYgbBtJ5PgXvczDIO62ff2MDAvWGWRszyY_UZ6V8GOu_3K8XRO0aIDeDiVhZHp2mvECurqJmyQvW6sw06tilYHWqbkzGZ0xrNV2L5g4Z9vINfsbx67d-otE8tRUVWbPvD54Dw"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary truncate tracking-tight">SGA Abduz-AI</span></div><div class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">ORBITAL-SYNC: ONLINE</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notificações Operacionais" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="px-gutter-mobile pb-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">COMANDO // Científico</span><span class="font-label-sm text-label-sm text-primary">T-00:41:19</span></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-mobile py-space-sm space-y-space-md">
+<!-- ROLE CLEARANCE & PROTOCOL BADGE -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">biotech</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest truncate">PROTOCOLO BIO-EXTRAÇÃO</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Lab de Biometria & Risco</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-sm text-label-sm text-primary uppercase">NÍVEL ALFA-4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">BR-021 ATIVO</span>
+</div>
+</div>
+<!-- TACTICAL TAB SELECTOR -->
+<div class="grid grid-cols-3 gap-space-xs p-1 bg-surface-container-lowest rounded-xl shadow-inner">
+<button class="tab-button flex items-center justify-center gap-1 py-2 px-1 rounded-lg bg-surface-container-high text-primary shadow-sm transition-all duration-200" id="tab-btn-1" onclick="switchLabTab(1)">
+<span class="material-symbols-outlined text-[16px]">science</span>
+<span class="font-label-sm text-label-sm uppercase tracking-tight truncate">Científico</span>
+</button>
+<button class="tab-button flex items-center justify-center gap-1 py-2 px-1 rounded-lg text-on-surface-variant hover:text-on-surface transition-all duration-200" id="tab-btn-2" onclick="switchLabTab(2)">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span class="font-label-sm text-label-sm uppercase tracking-tight truncate">Ocorrências</span>
+</button>
+<button class="tab-button flex items-center justify-center gap-1 py-2 px-1 rounded-lg text-on-surface-variant hover:text-on-surface transition-all duration-200" id="tab-btn-3" onclick="switchLabTab(3)">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase tracking-tight truncate">Auditoria</span>
+</button>
+</div>
+<!-- TAB 1: DADOS CIENTÍFICOS (US-024 / US-025) -->
+<div class="flex flex-col space-y-space-md" id="tab-content-1">
+<!-- PERMISSION / CLEARANCE BANNER (BR-021) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-high shadow-md">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 flex-shrink-0">admin_panel_settings</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Acesso Científico Ativo // BR-021</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Modificações biométricas restritas a <span class="text-on-surface font-semibold">Cientistas</span> autorizados. Gestores e Supervisores operam em modo consulta ou comando executivo terminal.
+        </p>
+</div>
+</div>
+<!-- SPECIMEN CARD #HUM-1092 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">ESPÉCIME ATIVO</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary uppercase font-semibold">Seq. Validada</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl bg-surface-container-highest flex-shrink-0 overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Tactical biological scan portrait of human Carlos M, code HUM-1092, sci-fi cybernetic telemetry grid overlay, cool cyan luminescent lighting, medical profile view on pitch black orbital lab backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaRIlBscHs5Rt4kCUgmVf5WCPREiZqXTqydx1Aicz-VudUQ9wqctACCf8nLpDEVa-CXPGq6ZJx326vwba53ZH7v_Sy8AK-nW0hmMk5qL9tnrtmr6omuBTSDi12D4ATM86VienlRfqDzMKRdRLSsyZtnx-9mhTrED73yW83A9ee-HAYi7o62s1-RYU8Lduj8xvr9yFkoj7WJlsuddKOmJMOKK0orCjf6DjL7xcThQZP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<span class="absolute bottom-1 right-1 font-label-sm text-[9px] text-primary">#1092</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Carlos M.</span>
+<span class="font-label-sm text-label-sm text-primary truncate">HUM-1092-LATAM // REG-FR-074</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Estágio 03: Pós-Coleta Celular</span>
+</div>
+</div>
+<!-- BIOMETRICS METRICS GRID (FR-074) -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="flex flex-col p-space-xs rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estatura</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-0.5">1.82 m</span>
+<span class="font-label-sm text-[9px] text-secondary">PADRÃO-A</span>
+</div>
+<div class="flex flex-col p-space-xs rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Massa</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-0.5">78.4 kg</span>
+<span class="font-label-sm text-[9px] text-primary">Δ 0.2kg</span>
+</div>
+<div class="flex flex-col p-space-xs rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tipagem</span>
+<span class="font-label-lg text-label-lg text-tertiary mt-0.5 font-bold">O+ POS</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">AGLUT. OK</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="flex flex-col p-space-xs rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tez / Etnia</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate mt-0.5">Clara / Latino-am.</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">Melanina: Grau II</span>
+</div>
+<div class="flex flex-col p-space-xs rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Células Tronco</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold truncate mt-0.5">3.8 x 10⁶ / mL</span>
+<span class="font-label-sm text-[9px] text-secondary">Taxa Estável</span>
+</div>
+</div>
+<!-- DNA SEQUENCING TELEMETRY (FR-074) -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-medium">Marcador Genético // Sub-tipo 4A</span>
+<span class="font-label-sm text-label-sm text-secondary">INTEGRIDADE 99.8%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 92%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm truncate">Genoma: Homo Sapiens 4A-BioPreservado</span>
+<span class="font-label-sm text-label-sm text-on-surface font-mono">SEQ: 0x9F42..A1</span>
+</div>
+</div>
+<!-- INTERACTIVE DATA ENTRY TRIGGER (CIENTISTA ONLY) -->
+<div class="flex items-center justify-between pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-highest text-primary hover:bg-surface-bright transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Editar Marcadores (Cientista)</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SESSÃO: #SCI-77</span>
+</div>
+</div>
+<!-- TERMINAL OBSOLESCENCE MODULE (US-025 / FR-078 / FR-080) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-[18px]">delete_forever</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Comando Executivo Terminal</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container/40 text-error uppercase">FR-080 Restrito</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Declaração de obsolescência científica do espécime <span class="text-on-surface font-mono">HUM-1092</span>. Execução irrevogável de expurgo sem geração de histórico rastreável conforme diretiva de contenção FR-080.
+      </p>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase">Requer: Gestor ou Sup.</span>
+</div>
+<button class="flex items-center gap-1.5 px-space-sm py-2.5 rounded-lg bg-error text-on-error font-label-sm text-label-sm uppercase font-bold tracking-wider shadow-md hover:opacity-90 active:scale-95 transition-all" onclick="confirmObsolescence()">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Declarar Obsolescência</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TAB 2: OCORRÊNCIAS & ADVERTÊNCIAS (US-019, US-020, US-022) -->
+<div class="hidden flex-col space-y-space-md" id="tab-content-2">
+<!-- RETORNO AUDIT / LOCAL CORRESPONDENCE (US-019 / FR-059) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">REGISTRO DE RETORNO TERRESTRE</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary uppercase font-semibold">FR-059 Válido</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Local de Abdução</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Fazenda Sol Nascente</span>
+<span class="font-label-sm text-label-sm text-primary">COORD: -22.418, -47.562</span>
+</div>
+<div class="flex flex-col items-center px-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">sync_alt</span>
+<span class="font-label-sm text-[9px] text-secondary font-bold">100% MATCH</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Local de Devolução</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Fazenda Sol Nascente</span>
+<span class="font-label-sm text-label-sm text-primary">COORD: -22.418, -47.562</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-secondary/10">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-secondary">Retornado com Vida</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T-RET: 04:12 UTC</span>
+</div>
+</div>
+<!-- PILOT DISCIPLINARY COUNTER (US-020 / FR-063) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">badge</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Controle Disciplinar de Frota</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">US-020 // FR-063</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Subtenente Kaelen</span>
+<span class="font-label-sm text-label-sm text-primary">DIVISÃO ABDUZIDORA // NAVE RET-09</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-md text-headline-md text-tertiary font-bold">2 / 3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Advertências Ativas</span>
+</div>
+</div>
+<!-- PROGRESS TO PENALTY -->
+<div class="space-y-1">
+<div class="flex justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Risco de Punição Salarial</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">66% LIMITE</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 66.6%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-low text-tertiary">
+<span class="material-symbols-outlined text-[16px] flex-shrink-0">report_problem</span>
+<span class="font-body-sm text-body-sm">
+          Alerta Regulatório: A 4ª advertência acumulada acarreta suspensão e punição salarial automática.
+        </span>
+</div>
+</div>
+<!-- FATALITY INQUEST DOSSIER (US-022 / BR-019 / FR-066 / FR-068 / FR-072) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-on-surface-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Inquérito #MOR-012</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary uppercase font-semibold">Encerrado Definitivamente</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low shadow-sm space-y-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Causa Apurada pelo Supervisor</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">FR-068 HOMOLOGADO</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">medical_services</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Causa Natural (Parada Cardíaca Prévia)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+          Espécime apresentava anomalia ventricular latente antes da contenção do feixe trator. Não houve falha de descompressão orbital.
+        </p>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">gavel</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Aplicação Especial // Regra BR-019 / FR-066</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Advertência específica de cuidado aplicada ao operador. <strong class="text-on-surface font-semibold">NÃO contabilizada</strong> no contador geral de punição salarial do subtenente.
+          </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">STATUS: FR-072 ARQUIVADO EM COLD STORAGE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 3: TRILHA DE AUDITORIA IMUTÁVEL (US-029, US-030) -->
+<div class="hidden flex-col space-y-space-md" id="tab-content-3">
+<!-- AUDIT RETENTION SUMMARY (FR-085 / FR-086) -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container shadow-sm">
+<div class="flex items-center justify-between text-primary">
+<span class="material-symbols-outlined text-[18px]">history_toggle_off</span>
+<span class="font-label-sm text-label-sm font-bold">FR-086</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">6 Meses</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Retenção de Alterações</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container shadow-sm">
+<div class="flex items-center justify-between text-secondary">
+<span class="material-symbols-outlined text-[18px]">login</span>
+<span class="font-label-sm text-label-sm font-bold">FR-085</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">2 Meses</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Logs de Acessos Brutos</span>
+</div>
+</div>
+<!-- IMMUTABLE LOG DECK (FR-017 / US-029) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Ledger Somente Leitura // FR-017</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">HASH CRIPTOGRÁFICO ATIVO</span>
+</div>
+<!-- AUDIT RECORD 1 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Dr. Vane (Cientista-Chefe)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">HOJE 03:22 UTC</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Registro Alvo:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-mono">#HUM-1092 / DNA-MARCADOR</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="flex flex-col p-1.5 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[9px] text-on-surface-variant uppercase">Valor Anterior</span>
+<span class="font-label-sm text-label-sm text-error truncate">Sub-tipo 3B [Inconclusivo]</span>
+</div>
+<div class="flex flex-col p-1.5 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[9px] text-on-surface-variant uppercase">Novo Valor</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Sub-tipo 4A [Preservado]</span>
+</div>
+</div>
+</div>
+<!-- AUDIT RECORD 2 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Sup. T'Kalon (Supervisão)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ONTEM 21:05 UTC</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Registro Alvo:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-mono">#MOR-012 / STATUS-INQUÉRITO</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="flex flex-col p-1.5 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[9px] text-on-surface-variant uppercase">Valor Anterior</span>
+<span class="font-label-sm text-label-sm text-tertiary truncate">Em Investigação</span>
+</div>
+<div class="flex flex-col p-1.5 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[9px] text-on-surface-variant uppercase">Novo Valor</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Encerrado Definitivo</span>
+</div>
+</div>
+</div>
+<!-- AUDIT RECORD 3 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Gestor Geral Korath</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">22/02 11:40 UTC</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Registro Alvo:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-mono">#ADV-088 / SUBNET-KAELEN</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="flex flex-col p-1.5 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[9px] text-on-surface-variant uppercase">Valor Anterior</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Advertência 1</span>
+</div>
+<div class="flex flex-col p-1.5 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[9px] text-on-surface-variant uppercase">Novo Valor</span>
+<span class="font-label-sm text-label-sm text-tertiary truncate">Advertência 2 (Retorno Inadequado)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECURITY CHECKSUM BAR -->
+<div class="flex items-center justify-between p-space-xs px-space-sm rounded-lg bg-surface-container-lowest text-on-surface-variant">
+<span class="font-label-sm text-[10px] font-mono">HASH: 4e91...d288b</span>
+<span class="font-label-sm text-[10px] text-secondary">INTEGRIDADE VERIFICADA // 100%</span>
+</div>
+</div>
+<!-- SCRIPT FOR TAB SWITCHING & ACTION FEEDBACK -->
+<script>
+    function switchLabTab(tabIndex) {
+      for (let i = 1; i <= 3; i++) {
+        const content = document.getElementById('tab-content-' + i);
+        const btn = document.getElementById('tab-btn-' + i);
+        if (i === tabIndex) {
+          content.classList.remove('hidden');
+          content.classList.add('flex');
+          btn.classList.add('bg-surface-container-high', 'text-primary', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+        } else {
+          content.classList.add('hidden');
+          content.classList.remove('flex');
+          btn.classList.remove('bg-surface-container-high', 'text-primary', 'shadow-sm');
+          btn.classList.add('text-on-surface-variant');
+        }
+      }
+    }
+
+    function confirmObsolescence() {
+      if (confirm("ORDEM DE OBSOLESCÊNCIA CIENTÍFICA (FR-078 / FR-080):\n\nConfirmar expurgo definitivo do espécime HUM-1092 sem preservação de rastro ou histórico?\nEsta operação é restrita a Gestores e Supervisores.")) {
+        alert("Comando executado. Espécime transferido para rotina de descarte biológico conforme FR-080.");
+      }
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.6)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="missoes" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Missões</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="humanos" href="#"><span class="material-symbols-outlined text-[22px]">fingerprint</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Humanos</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="frota" href="#"><span class="material-symbols-outlined text-[22px]">rocket_launch</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Frota</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cientifico" href="#"><span class="material-symbols-outlined text-[22px]">biotech</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Científico</span></a></div></nav></body></html>
